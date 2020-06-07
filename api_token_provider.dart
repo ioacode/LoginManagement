@@ -4,8 +4,9 @@ class ApiTokenProvider {
 
   Future<TokenModel> getTokenGenerate() async { 
     var bodyRequest = {
-      "client_id": "007",
-      "client_secret": "James Bon",
+      "grant_type": "antagonis",
+      "client_id": generateMd5(client_modif(CLIENT_ID, 1)),,
+      "client_secret": generateMd5(client_modif(CLIENT_SECRET, 2)),
     };
 
     try{
