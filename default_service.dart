@@ -1,5 +1,7 @@
 
 const String BASE_URL = "https://127.0.0.1:8066/sevenproject";
+String CLIENT_ID       = "actionMC";
+String CLIENT_SECRET   = "Spiderman";
 
 Dio ApiServiceTime() {
   Dio dio = new Dio();
